@@ -1,0 +1,7 @@
+{
+  "name": "musabarah",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
