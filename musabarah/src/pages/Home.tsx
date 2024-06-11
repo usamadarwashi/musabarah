@@ -4,14 +4,9 @@ import './Home.css';
 import '../tailwind.css';
 import Widget from '../components/widget';
 import { useState } from 'react';
+import Widgets from '../components/widgets';
 const Home: React.FC = () => {
-  
 
-    const [widgets, setWidgets] = useState([<Widget key={0} />]);
-  
-    const addWidget = () => {
-      setWidgets([...widgets, <Widget key={widgets.length} />]);
-    };
   return (
     <IonPage>
       <IonHeader>
@@ -27,13 +22,9 @@ const Home: React.FC = () => {
         </IonHeader>
         {/* <ExploreContainer /> */}
         <div className="p-4">
-        <IonButton onClick={addWidget}>Add Widget</IonButton>
+    
       </div>
-      <div className="flex flex-row flex-wrap p-4 space-x-4">
-        {widgets.map((widget, index) => (
-          <div key={index}>{widget}</div>
-        ))}
-      </div>
+      <Widgets/>
       </IonContent>
     </IonPage>
   );
