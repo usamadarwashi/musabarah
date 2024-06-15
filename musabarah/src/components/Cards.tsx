@@ -14,7 +14,7 @@ const Card: React.FC<CardProps> = ({image, name, icon}) => {
   return (
     <>
       <div className="relative inline-block">
-      <img src={image} alt="bg"/>
+      <img src={image} alt="bg" className="w-48"/>
       <More size="28" color="#FFF" className="absolute top-2 right-2 cursor-pointer" />
       {icon}
       <h2 className="absolute bottom-2 left-2 text-white">{name}</h2>
